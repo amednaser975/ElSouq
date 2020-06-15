@@ -59,3 +59,19 @@ $(function () {
 
    });
 });
+// Scroll To Top button
+var scrollToTop = $("#back-to-top");
+var offsetTopFeatures = $('.features').offset().top;
+$(window).scroll(function() {
+  if ($(window).scrollTop() >= offsetTopFeatures) {
+    if (scrollToTop.is(":hidden")) {
+      scrollToTop.css("display", "block");
+    }
+  } else {
+    scrollToTop.css("display", "none");
+  }
+});
+$("#back-to-top").click( function () {
+
+  $('html, body').animate({scrollTop: 0}, 1000);
+})

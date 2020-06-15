@@ -852,3 +852,28 @@ footer .contact ul li span a
 }
 /* End Copyrights */
 
+
+/* Start Scroll To Top button */
+#back-to-top {
+    border: none;
+    position: fixed;
+    display: none;
+    background: #0078ff;
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 15px;
+    transition: all 0.5s ease;
+    z-index: 11;
+    color: #fff;
+}
+.testing
+{
+    color: #16a085;
+}
+/* End Scroll To Top button */
