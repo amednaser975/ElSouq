@@ -88,9 +88,14 @@ body
     margin-left: 20px;
     text-transform: uppercase;
     color: #16a085;
+    transition: all .2s ease;
 }
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ec1c23;
+} 
 .navbar-light .navbar-nav .active>.nav-link
 {
+    transition: color .2s ease;
     color: #ec1c23;
 }
 @media (max-width:992px)
@@ -858,7 +863,7 @@ footer .contact ul li span a
     border: none;
     position: fixed;
     display: none;
-    background: #0078ff;
+    background: #16a085;
     color: #fff;
     width: 44px;
     height: 44px;
@@ -871,6 +876,12 @@ footer .contact ul li span a
     transition: all 0.5s ease;
     z-index: 11;
     color: #fff;
+    transition: all .3s ease-in;
+}
+#back-to-top:hover {
+    background: #fff;
+    color: #16a085;
+    border: 2px solid #16a085;
 }
 .testing
 {

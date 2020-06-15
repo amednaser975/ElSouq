@@ -37,20 +37,20 @@
           </button>
           <div class="collapse navbar-collapse" id="main-nav">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Work</a>
+                <a class="nav-link" href="#work">Work</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="#blog">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -58,7 +58,7 @@
       </nav>
       <!-- End Navbar -->
       <!-- Start Slider -->
-      <div class="slider">
+      <div class="slider block" id="home">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <h1>We're an Indepentdent Design and <span>Development</span> Agency.</h1>
@@ -107,7 +107,7 @@
       </div>
       <!-- End Features -->
       <!-- Start Overview -->
-      <div class="overview text-center">
+      <div class="overview text-center block" id="about">
         <div class="container">
           <h2>Company Overview</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident culpa eveniet odio velit repellat, accusantium nemo similique non atque doloribus, fugit fugiat id ut iure est? Qui iure ut provident.</p>
@@ -117,7 +117,7 @@
       </div>
       <!-- End Overview -->
       <!-- Start Featured-Work -->
-      <div class="featured-work text-center">
+      <div class="featured-work text-center block" id="work">
         <div class="container">
           <h2>Featured Work</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga blanditiis temporibus optio totam nisi! Qui harum doloremque laborum voluptatum nihil, dolor quaerat at modi, voluptatem, culpa laudantium. Molestias, commodi excepturi.</p>
@@ -162,7 +162,7 @@
       </div>
       <!-- End Featured-Work -->
       <!-- Start Latest Posts -->
-      <div class="latest-posts">
+      <div class="latest-posts block" id="blog">
         <div class="container">
           <h2 class="text-center">Latest Posts</h2>
           <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga blanditiis temporibus optio totam nisi! Qui harum doloremque laborum voluptatum nihil, dolor quaerat at modi, voluptatem, culpa laudantium. Molestias, commodi excepturi.</p>
@@ -331,27 +331,27 @@
       </div>
       <!-- End Choose Us -->
       <!-- Start Statistics -->
-      <div class="stats text-center text-green">
+      <div class="stats text-center text-green" id="stats">
         <div class="container">
           <div class="row">
             <div class="info col-sm-6 col-lg-3 mb-3">
               <i class="fa fa-user fa-fw fa-3x mb-3" aria-hidden="true"></i>
-              <h3>859</h3>
+              <h3 id="first">0</h3>
               <h5>Happy Clients</h5>
             </div>
             <div class="info col-sm-6 col-lg-3 mb-3">
               <i class="fas fa-cart-arrow-down fa-3x mb-2"></i>
-              <h3>859</h3>
+              <h3 id="second">0</h3>
               <h5>Amazing Tours</h5>
             </div>
             <div class="info col-sm-6 col-lg-3 mb-3">
               <i class="fa fa-briefcase fa-3x mb-2" aria-hidden="true"></i>
-              <h3>737</h3>
+              <h3 id="third">0</h3>
               <h5>Partenrs</h5>
             </div>
             <div class="info col-sm-6 col-lg-3 mb-3">
               <i class="fa fa-comment fa-3x mb-2" aria-hidden="true"></i>
-              <h3>430</h3>
+              <h3 id="fourth">0</h3>
               <h5>Comments</h5>
             </div>
           </div>
@@ -373,7 +373,7 @@
       </div>-->
       <!-- End Contact Us -->
       <!-- Start Footer -->
-      <footer>
+      <footer id="contact" class="block">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-lg-6 site-info">
@@ -416,7 +416,7 @@
             </div>
           </div>
         </div>
-      </footer>
+      </footer id>
       <!-- End Footer -->
       <!-- Start Copyright -->
       <div class="copyright text-center">
@@ -440,6 +440,7 @@
       <script src="js/jquery-3.5.0.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
+      <script src="js/all.min.js"></script>
       <script src="js/main.js"></script>
     </body>
 </html>
