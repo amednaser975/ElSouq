@@ -23,7 +23,15 @@ $(function () {
     }
 
    });
+    // Toggler Button
+  
+  if(window.innerWidth < 992)
+  {
+    $('.nav-item').on('click', function () {
 
+      $('#main-nav').removeClass('show');
+    })
+  }
    // Fixed Navbar On Scroll
    $(window).on('scroll', function () {
     
